@@ -1,0 +1,74 @@
+Git commands
+------------
+
+Basic commnads:
+---------------
+	Add:
+	-----
+	Add untracked files
+		git add -A
+		git add .
+	
+	Commit: 
+	-------
+		git commit origin master -m "message"
+		git commit -m "message"
+	
+	Status:
+	-------
+		git status
+	Log:
+	----
+		git log
+
+	Branch:
+	-------	
+	create branch
+		git branch branch-name
+		Example
+			1- git branch feature
+			2- git branch feature/new-feature
+	switch branch
+		git checkout branch-name
+		
+	get list of branches
+		git branch
+		
+	Merge:
+	------
+		* Its a merge commit.
+		switch to the branch in which the rest of the branches are to be merge
+			git checkout main-branch
+			git merge new-branch
+		
+
+Map local project with a remote repository
+------------------------------------------
+	inside the parent folder of the project
+		- git init
+		- git add README.md
+		- git add .
+		- git commit -m "First commit."
+		- git remote add origin <remote repo>
+		- git remote -v //set new remote	
+		- git push origin master
+
+set default upstream branch:
+----------------------------
+	git push --set-upstream origin master
+	
+
+Git flow
+--------
+	install git flow
+	initialize
+		git flow init -d								default
+		git flow feature start feature/new-feature		create a new feature branch
+		git flow feature finish new-feature				merging new branch with the develop branch, new-feature branch will be auto-deleted
+		
+		*adding and committing -- same commands
+		
+generate ssh keys
+	ssh-keygen -t rsa -C 'adityatilyalkar16@gmail.com'
+	copy contents of id_rsa.pub to github account.
+		
