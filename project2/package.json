@@ -1,0 +1,23 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Sample git project with Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-ad-adi/Git-learning.git"
+  },
+  "author": "Aditya T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-ad-adi/Git-learning/issues"
+  },
+  "homepage": "https://github.com/a-ad-adi/Git-learning#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
